@@ -581,6 +581,7 @@ public class EastPanelManager {
 
             private void initPanel() {
                 initNameLabel();
+                initImage();
                 initTotalEarningsLabel();
                 initWeeklyEarnings();
                 initHourlyWage();
@@ -589,6 +590,20 @@ public class EastPanelManager {
                 viewSchedule();
                 editSchedule();
                 initBack();
+            }
+
+            private void initImage() {
+                ImageIcon image;
+                if (employee.getGenderBiological() == 0) {
+                    image = new ImageIcon("./Data/male.png");
+                } else {
+                    image = new ImageIcon("./Data/female.png");
+                }
+                JLabel imagePanel = new JLabel();
+                imagePanel.setIcon(image);
+                imagePanel.setPreferredSize(new Dimension(230, 160));
+                imagePanel.setIconTextGap(10);
+                add(imagePanel);
             }
 
             private void initEditHourlySalary() {
@@ -610,7 +625,7 @@ public class EastPanelManager {
                 JTextField hourlyWageLabel = new JTextField("Hourly Salary: $" + employee.getHourlySalary());
                 hourlyWageLabel.setBackground(Color.red);
                 hourlyWageLabel.setFont(new Font("Arial", Font.BOLD, 18));
-                hourlyWageLabel.setPreferredSize(new Dimension(285, 50));
+                hourlyWageLabel.setPreferredSize(new Dimension(285, 25));
                 hourlyWageLabel.setForeground(Color.white);
                 hourlyWageLabel.setEditable(false);
                 hourlyWageLabel.setHorizontalAlignment(JTextField.CENTER);
@@ -621,7 +636,7 @@ public class EastPanelManager {
                 JTextField hoursLabel = new JTextField("Weekly Hours: " + employee.getHours());
                 hoursLabel.setBackground(Color.red);
                 hoursLabel.setFont(new Font("Arial", Font.BOLD, 18));
-                hoursLabel.setPreferredSize(new Dimension(285, 50));
+                hoursLabel.setPreferredSize(new Dimension(285, 25));
                 hoursLabel.setForeground(Color.white);
                 hoursLabel.setEditable(false);
                 hoursLabel.setHorizontalAlignment(JTextField.CENTER);
@@ -632,7 +647,7 @@ public class EastPanelManager {
                 JTextField weeklyEarnings = new JTextField("Weekly Earnings: $" + employee.getWeeklySalary());
                 weeklyEarnings.setBackground(Color.red);
                 weeklyEarnings.setFont(new Font("Arial", Font.BOLD, 18));
-                weeklyEarnings.setPreferredSize(new Dimension(285, 50));
+                weeklyEarnings.setPreferredSize(new Dimension(285, 25));
                 weeklyEarnings.setForeground(Color.white);
                 weeklyEarnings.setEditable(false);
                 weeklyEarnings.setHorizontalAlignment(JTextField.CENTER);
@@ -643,7 +658,7 @@ public class EastPanelManager {
                 JTextField totalEarningLabel = new JTextField("Total Earnings: $" + employee.getTotalSalary());
                 totalEarningLabel.setBackground(Color.red);
                 totalEarningLabel.setFont(new Font("Arial", Font.BOLD, 18));
-                totalEarningLabel.setPreferredSize(new Dimension(285, 50));
+                totalEarningLabel.setPreferredSize(new Dimension(285, 25));
                 totalEarningLabel.setForeground(Color.white);
                 totalEarningLabel.setEditable(false);
                 totalEarningLabel.setHorizontalAlignment(JTextField.CENTER);
