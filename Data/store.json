@@ -1,0 +1,207 @@
+{
+    "currDay": 0,
+    "totalEarnings": 9495,
+    "employeeList": [
+        {
+            "hourlySalary": 15,
+            "hours": 0,
+            "weeklySalary": 0,
+            "totalSalary": 1140,
+            "genderBiological": 0,
+            "name": "James Bond",
+            "availability": [
+                {
+                    "hours": 6,
+                    "start": 8,
+                    "day": 0
+                },
+                {
+                    "hours": 6,
+                    "start": 8,
+                    "day": 1
+                },
+                {
+                    "hours": 6,
+                    "start": 14,
+                    "day": 2
+                },
+                {
+                    "hours": 6,
+                    "start": 14,
+                    "day": 4
+                },
+                {
+                    "hours": 12,
+                    "start": 8,
+                    "day": 5
+                }
+            ]
+        },
+        {
+            "hourlySalary": 14,
+            "hours": 0,
+            "weeklySalary": 0,
+            "totalSalary": 672,
+            "genderBiological": 0,
+            "name": "Batman",
+            "availability": [
+                {
+                    "hours": 6,
+                    "start": 8,
+                    "day": 0
+                },
+                {
+                    "hours": 6,
+                    "start": 8,
+                    "day": 2
+                },
+                {
+                    "hours": 6,
+                    "start": 14,
+                    "day": 4
+                },
+                {
+                    "hours": 6,
+                    "start": 8,
+                    "day": 5
+                }
+            ]
+        },
+        {
+            "hourlySalary": 13,
+            "hours": 0,
+            "weeklySalary": 0,
+            "totalSalary": 1066,
+            "genderBiological": 0,
+            "name": "Superman",
+            "availability": [
+                {
+                    "hours": 6,
+                    "start": 8,
+                    "day": 0
+                },
+                {
+                    "hours": 6,
+                    "start": 8,
+                    "day": 1
+                },
+                {
+                    "hours": 12,
+                    "start": 8,
+                    "day": 3
+                },
+                {
+                    "hours": 6,
+                    "start": 8,
+                    "day": 4
+                },
+                {
+                    "hours": 6,
+                    "start": 8,
+                    "day": 6
+                }
+            ]
+        },
+        {
+            "hourlySalary": 16,
+            "hours": 0,
+            "weeklySalary": 0,
+            "totalSalary": 1024,
+            "genderBiological": 1,
+            "name": "Wonder Woman",
+            "availability": [
+                {
+                    "hours": 6,
+                    "start": 14,
+                    "day": 0
+                },
+                {
+                    "hours": 6,
+                    "start": 14,
+                    "day": 1
+                },
+                {
+                    "hours": 6,
+                    "start": 14,
+                    "day": 2
+                },
+                {
+                    "hours": 6,
+                    "start": 8,
+                    "day": 4
+                },
+                {
+                    "hours": 6,
+                    "start": 14,
+                    "day": 5
+                }
+            ]
+        },
+        {
+            "hourlySalary": 15,
+            "hours": 0,
+            "weeklySalary": 0,
+            "totalSalary": 930,
+            "genderBiological": 1,
+            "name": "Super Woman",
+            "availability": [
+                {
+                    "hours": 6,
+                    "start": 14,
+                    "day": 0
+                },
+                {
+                    "hours": 6,
+                    "start": 8,
+                    "day": 2
+                },
+                {
+                    "hours": 6,
+                    "start": 14,
+                    "day": 3
+                },
+                {
+                    "hours": 12,
+                    "start": 8,
+                    "day": 6
+                }
+            ]
+        },
+        {
+            "hourlySalary": 14,
+            "hours": 0,
+            "weeklySalary": 0,
+            "totalSalary": 672,
+            "genderBiological": 1,
+            "name": "Cat Woman",
+            "availability": [
+                {
+                    "hours": 6,
+                    "start": 14,
+                    "day": 0
+                },
+                {
+                    "hours": 6,
+                    "start": 14,
+                    "day": 1
+                },
+                {
+                    "hours": 6,
+                    "start": 8,
+                    "day": 3
+                },
+                {
+                    "hours": 6,
+                    "start": 14,
+                    "day": 6
+                }
+            ]
+        }
+    ],
+    "name": "Coast Meridian Hardware",
+    "currHour": 8,
+    "weeklyEarnings": 0,
+    "activeEmployees": [],
+    "close": 20,
+    "open": 8
+}
