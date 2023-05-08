@@ -6,8 +6,9 @@ import org.json.JSONObject;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Observable;
 
-public class Store implements Writable {
+public class Store extends Observable implements Writable {
     private List<Employee> employeeList;
     private String name;
     private int open;
@@ -32,6 +33,7 @@ public class Store implements Writable {
 
     public void hireEmployee(Employee employee) {
         this.employeeList.add(employee);
+        addObserver(employee);
     }
 
     public void fireEmployee(Employee employee) {
@@ -39,6 +41,7 @@ public class Store implements Writable {
         if (activeEmployees.contains(employee)) {
             this.activeEmployees.remove(employee);
         }
+        deleteObserver(employee);
     }
 
     public void incDay() {
@@ -90,16 +93,16 @@ public class Store implements Writable {
 
     public void weeklyReset() {
         int totalWages = 0;
+        setChanged();
+        notifyObservers(2);
         for (Employee e: employeeList) {
-            e.updateSalary();
             totalWages += e.getWeeklySalary();
         }
         this.weeklyEarnings -= totalWages;
         this.totalEarnings += weeklyEarnings;
         weeklyEarnings = 0;
-        for (Employee e: employeeList) {
-            e.weeklyReset();
-        }
+        setChanged();
+        notifyObservers(1);
     }
 
     public void startDay() {
@@ -117,9 +120,9 @@ public class Store implements Writable {
         for (int i = activeEmployees.size() - 1; i >= 0; i--) {
             removeEmployeeFromCurrShift(activeEmployees.get(i));
         }
-        for (Employee e: employeeList) {
-            e.updateSalary();
-        }
+        setChanged();
+        notifyObservers(2);
+
         incDay();
         this.currHour = this.open;
     }

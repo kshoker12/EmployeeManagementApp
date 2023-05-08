@@ -4,11 +4,9 @@ import Persistence.Writable;
 import org.json.JSONArray;
 import org.json.JSONObject;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Objects;
+import java.util.*;
 
-public class Employee implements Writable {
+public class Employee implements Writable, Observer {
     private String name;
     private int genderBiological;
     private int hourlySalary;
@@ -146,5 +144,19 @@ public class Employee implements Writable {
             avails.put(a.toJson());
         }
         return avails;
+    }
+
+    @Override
+    public void update(Observable o, Object arg) {
+        int x = (int) arg;
+        Store s = (Store) o;
+        switch(x) {
+            case 1:
+                weeklyReset();
+                break;
+            case 2:
+                updateSalary();
+                break;
+        }
     }
 }

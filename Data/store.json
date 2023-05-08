@@ -1,12 +1,12 @@
 {
     "currDay": 0,
-    "totalEarnings": 9495,
+    "totalEarnings": 22943,
     "employeeList": [
         {
             "hourlySalary": 15,
             "hours": 0,
             "weeklySalary": 0,
-            "totalSalary": 1140,
+            "totalSalary": 1710,
             "genderBiological": 0,
             "name": "James Bond",
             "availability": [
@@ -41,7 +41,7 @@
             "hourlySalary": 14,
             "hours": 0,
             "weeklySalary": 0,
-            "totalSalary": 672,
+            "totalSalary": 1008,
             "genderBiological": 0,
             "name": "Batman",
             "availability": [
@@ -71,7 +71,7 @@
             "hourlySalary": 13,
             "hours": 0,
             "weeklySalary": 0,
-            "totalSalary": 1066,
+            "totalSalary": 1599,
             "genderBiological": 0,
             "name": "Superman",
             "availability": [
@@ -106,7 +106,7 @@
             "hourlySalary": 16,
             "hours": 0,
             "weeklySalary": 0,
-            "totalSalary": 1024,
+            "totalSalary": 1536,
             "genderBiological": 1,
             "name": "Wonder Woman",
             "availability": [
@@ -141,7 +141,7 @@
             "hourlySalary": 15,
             "hours": 0,
             "weeklySalary": 0,
-            "totalSalary": 930,
+            "totalSalary": 1395,
             "genderBiological": 1,
             "name": "Super Woman",
             "availability": [
@@ -171,7 +171,7 @@
             "hourlySalary": 14,
             "hours": 0,
             "weeklySalary": 0,
-            "totalSalary": 672,
+            "totalSalary": 1008,
             "genderBiological": 1,
             "name": "Cat Woman",
             "availability": [
